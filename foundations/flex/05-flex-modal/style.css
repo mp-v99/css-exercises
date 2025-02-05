@@ -9,7 +9,6 @@ body {
   margin: 0;
   background: #aaa;
   color: #333;
-  /* I'll give you this one for free lol */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -30,9 +29,6 @@ body {
   width: 42px;
   height: 42px;
   border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .close-button {
@@ -66,4 +62,47 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+/* My solution below: */
+
+
+.modal,
+.the_cool_kids,
+.the_lonely_kid,
+.head_boy {
+  display: flex;
+}
+
+.head_boy {
+  font-size: large;
+  font-weight: bold;
+  align-items: center;
+}
+
+.the_lonely_kid {
+  max-width: 42px;
+  max-height: 42px;
+  justify-content: center;
+}
+
+.the_lonely_kid .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  padding: 15px;
+  column-gap: 15px;
+}
+
+.modal div {
+  flex: 1;
+}
+
+.modal .the_cool_kids {
+  flex-direction: column;
+  flex-grow: 3;
+  row-gap: 8px;
 }
